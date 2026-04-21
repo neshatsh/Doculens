@@ -1,0 +1,35 @@
+# Secrets
+.env
+
+# Ingested data and vector store
+data/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Test / coverage artefacts
+.pytest_cache/
+htmlcov/
+.coverage*
+coverage.xml
+
+# Logs
+logs/
+
+# MLflow runs
+mlruns/
+
+# macOS
+.DS_Store
+
+# IDEs
+.vscode/
+.idea/
