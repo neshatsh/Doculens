@@ -186,16 +186,3 @@ doculens/
 ├── docker-compose.yml
 └── requirements.txt
 ```
-
-## Domain Applicability
-
-This platform is domain-agnostic. The CUAD dataset provides legal contracts as a benchmark, but the same pipeline applies directly to:
-
-- **Banking**: loan agreements, regulatory filings (10-K, SEC), KYC documents
-- **Insurance**: policy contracts, claims forms, medical reports
-- **Retail/E-Commerce**: supplier contracts, invoice processing, product catalogs
-- **Enterprise**: HR policies, internal knowledge bases, financial reports
-
-## Resume Bullet
-
-> Built DocuLens, a production-grade RAG document intelligence platform: ingested 200+ contracts via a multi-stage extraction pipeline (pdfplumber, PyMuPDF, GPT-4V fallback), indexed 228 chunks in ChromaDB with sentence-transformer embeddings, implemented BERT cross-encoder reranking (top-20 → top-5), and served via Dockerized FastAPI (122 tests, 78% coverage); measured retrieval quality (Hit Rate@5, MRR) with MLflow experiment tracking on CUAD — current low scores reflect a corpus/benchmark mismatch rather than retrieval failure, with full-corpus evaluation in progress.
