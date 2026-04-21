@@ -52,7 +52,7 @@ Cited Answer + Sources
 
 ### 1. Clone and configure
 ```bash
-git clone https://github.com/yourusername/doculens.git
+git clone https://github.com/neshatsh/Doculens
 cd doculens
 cp .env.example .env
 # Edit .env — set OPENAI_API_KEY or ANTHROPIC_API_KEY
