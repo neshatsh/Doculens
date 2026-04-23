@@ -1,6 +1,22 @@
 # DocuLens — Intelligent Document Analysis Platform
 
-A production-grade RAG system for legal, financial, and insurance documents. Upload PDFs, ask natural language questions, get cited answers grounded in your documents.
+DocuLens is a production-grade **Retrieval-Augmented Generation (RAG)** system 
+that turns static legal, financial, and insurance documents into a queryable 
+knowledge base. Upload any PDF — contracts, reports, policy documents — ask a 
+natural language question, and get a cited answer grounded in the exact source 
+text.
+
+Built on the **CUAD benchmark** (510 real legal contracts, 13,000+ lawyer-annotated 
+clauses across 41 categories), DocuLens demonstrates an end-to-end production ML 
+pipeline: VLM-powered extraction for scanned pages, semantic chunking, dense 
+retrieval with **BERT cross-encoder reranking** (top-20 → top-5), prompt-engineered 
+LLM generation with source citations, and a Dockerized FastAPI backend with 
+78% test coverage and MLflow experiment tracking.
+
+Applicable across banking (loan agreements, KYC), insurance (policy contracts, 
+claims), and retail (supplier contracts, invoices) — the domain changes, the 
+pipeline stays the same.
+
 
 ## Architecture
 
